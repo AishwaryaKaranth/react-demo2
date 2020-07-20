@@ -3,7 +3,7 @@ import styles from "./styles.css";
 import img from "./indexgs.jpg";
 import { Row, Col } from "react-bootstrap";
 
-function Wishlist() {
+function WishList() {
   return (
     <>
       <section className={styles["about-us"]}>
@@ -24,16 +24,19 @@ function Goals() {
           <Col>
             <img src={img} alt="something" />
           </Col>
+          <Col>
+            <img src={img} alt="soething"/>
+          </Col>
         </Row>
       </section>
     </>
   );
 }
-export default function App() {
-  return (
-    <div className="App">
-      <Wishlist />
-      <Goals />
-    </div>
+export default function App(){
+  return(
+    <>
+      <WishList/>
+      <Goals/>
+    </>
   );
 }
